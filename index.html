@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.amcharts.com/lib/5/index.js" defer></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js" defer></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js" defer></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js" defer></script>
+    <script src="./main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -31,17 +36,19 @@
         </section>
         <section class="history">
             <section class="education">
-                <div class="timeframe">09.2019 - present</div>
+                <h1>Education</h1>
+                <div class="timeframe"><i class="fa-solid fa-calendar-days fa-xl" style="color: var(--royal-blue)"></i>09.2019 - present</div>
                 <div class="info">
-                    <h1>IT specialist</h1>
+                    <h2 class="margin">IT specialist</h2>
                     <p>Zespół Szkół Zawodowych nr 1 im. por. Władysława Jakubowskiego, Nowy Dwór Mazowiecki (Technical High School, IT specialisation)</p>
                 </div>
             </section>
             <section class="jobs">
-                <div class="timeframe">03.2022 - 04.2022</div>
+                <h1>Job Experience</h1>
+                <div class="timeframe"><i class="fa-solid fa-calendar-days fa-xl" style="color: var(--royal-blue)"></i>03.2022 - 04.2022</div>
                 <div class="info">
-                    <h1>Intern</h1>
-                    <p>Torro Krzysztof Szarzyński, Nowy Dwór Mazowiecki</p>
+                    <h2>Intern</h2>
+                    <p class="margin">Torro Krzysztof Szarzyński, Nowy Dwór Mazowiecki</p>
                     <ul>
                         <li>Analizing and repairing technical and OS issues with laptops, PCs and other peripherals</li>
                         <li>Installing and initializing new software and updating already present software</li>
@@ -50,7 +57,43 @@
                 </div>
             </section>
         </section>
-        <section class="skills"></section>
+        <section class="skills">
+            <div class="skill" id="html">
+                <i class="fa-brands fa-github fa-2xl"></i>
+                <div class="fill-meter">
+                    <div class="filler" style="background: var(--navy-blue); width: 70%;"></div>
+                    <p class="score">70%</p>
+                </div>
+            </div>
+            <div class="skill" id="css">
+                <i class="fa-brands fa-git-alt fa-2xl"></i>
+                <div class="fill-meter">
+                    <div class="filler" style="background: #F1502F;  width: 85%;"></div>
+                    <p class="score">85%</p>
+                </div>
+            </div>
+            <div class="skill" id="sass">
+                <i class="fa-brands fa-html5 fa-2xl"></i>
+                <div class="fill-meter">
+                    <div class="filler" style="background: var(--navy-blue); box-shadow: 0 0 5px 5px var(--navy-blue);"></div>
+                    <p class="score">70%</p>
+                </div>
+            </div>
+            <div class="skill" id="github">
+                <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                <div class="fill-meter">
+                    <div class="filler" style="background: var(--navy-blue); box-shadow: 0 0 5px 5px var(--navy-blue);"></div>
+                    <p class="score">70%</p>
+                </div>
+            </div>
+            <div class="skill" id="git">
+                <i class="fa-brands fa-sass fa-2xl"></i>
+                <div class="fill-meter">
+                    <div class="filler" style="background: var(--navy-blue); box-shadow: 0 0 5px 5px var(--navy-blue);"></div>
+                    <p class="score">70%</p>
+                </div>
+            </div>
+        </section>
         <section class="projects">
             <a href="https://luckyszakul0.github.io/FM-skilled-elearning-landing-page/">
                 <article class="project">
