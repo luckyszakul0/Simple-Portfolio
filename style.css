@@ -262,3 +262,111 @@ mark {
     font-size: 1.75rem;
     text-shadow: 0 0 5px white;
 }
+
+.fa-html5:hover{
+    color: #f06529;
+    text-shadow: 0 0 50px #f06529;
+}
+
+.fa-css3-alt:hover{
+    color: #2965f1;
+    text-shadow: 0 0 50px #2965f1;
+}
+
+.fa-sass:hover{
+    color: #cc6699;
+    text-shadow: 0 0 50px #cc6699;
+}
+
+.skills .fa-github:hover{
+    color: var(--navy-blue);
+    text-shadow: 0 0 50px var(--navy-blue);
+}
+
+.fa-git-alt:hover{
+    color: #F1502F;
+    text-shadow: 0 0 50px #F1502F;
+}
+
+#git, #sass, #css{
+    border-left: 5px dotted var(--baby-blue);
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    height: 30rem;
+    gap: 3rem;
+}
+
+.project-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project{
+    border: 2px solid var(--dark-gray);
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s;
+}
+
+hr{
+    margin-top: 5rem;
+    color: var(--baby-blue);
+}
+
+.bg{
+    height: 15%;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.projects a{
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 0px var(--dark-gray);
+}
+
+.bg>h3{
+    position: relative;
+}
+
+.bg>h3::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--royal-blue);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.project:hover .bg>h3::after{
+    width: 100%;
+}
+
+#rating-component{
+    background: #26292E;
+}
