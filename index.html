@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/095d2dcbcb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.amcharts.com/lib/5/index.js" defer></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js" defer></script>
-    <script src="https://cdn.amcharts.com/lib/5/radar.js" defer></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
     <script src="./main.js" defer></script>
     <title>Document</title>
 </head>
@@ -133,22 +133,56 @@
             </div>  
         </section>
         <section class="interests">
-            <section class="lego">
-                <a href="https://store.bricklink.com/luckyszakul&utm_content=globalnav#/terms">
-                    <div><img src="./img/lego.png" alt="Lego brick icon"></div>
-                </a>
-                <p>I've always liked creating things. I got back to LEGO at around age 16 by completing my old collection of City farm sets from around 2009. Since then it has been my main interest. I now own around 50 LEGO sets both assembled and unassembled plus around 30k+ parts in my small online LEGO store which you can find by clicking on the icon.</p>
-            </section>
-            <section class="geography">
-                <div><i class="fa-solid fa-globe fa-xl" style="color: var(--royal-blue)"></i></div>
-                <p>I mainly like the political geography - locations and names of many different countries. Over time that interest spilled over to history of countries and their other aspects. I'm also interested in vexillology - the science about flags. I'm currently trying to memorize all of the capitals.</p>
-            </section>
-            <section class="games">
-                <div><i class="fa-solid fa-gamepad fa-xl" style="color: var(--royal-blue)"></i></div>
-                <p>My adventure with gaming probably started around the age of 2. I was playing simple logic games then. Over many years I've accumulated quite a library of games. Among them I got to play many classics both past and present like the Original Doom, Half-life series, GTA series, TES games, Portal, Hitman series and many more!</p>
-            </section>
+            <h1 class="interests-heading">My interests include:</h1>
+            <div id="accordion" style="width: 70%; position: relative; left: 50%; transform: translateX(-50%);">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="display: flex; justify-content: center; align-items: center; gap: 1rem; text-align: center;" >
+                        <div class="lego-icon"><img src="./img/lego.png" alt="Lego brick icon"></div> <h3 style="text-decoration: none;">LEGO</h3> <div class="lego-icon"><img src="./img/lego.png" alt="Lego brick icon"></div>
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        I've always liked creating things. I got back to LEGO at around age 16 by completing my old collection of City farm sets from around 2009. Since then it has been my main interest. I now own around 50 LEGO sets both assembled and unassembled plus around 30k+ parts in my small online LEGO store which you can find <a href="https://store.bricklink.com/luckyszakul&utm_content=globalnav#/shop" target="_blank">here</a>.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="display: flex; justify-content: center; align-items: center; gap: 1rem; text-align: center;" >
+                        <div class="lego-icon"><img src="./img/Zrzut ekranu 2024-04-15 191710.png" alt=""></div> <h3>Video games</h3> <div class="lego-icon"><img src="./img/Zrzut ekranu 2024-04-15 191710.png" alt=""></div>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        My adventure with gaming probably started around the age of 2. I was playing simple logic games then. Over many years I've accumulated quite a library of games. Among them I got to play many classics both past and present like the Original Doom, Half-life series, GTA series, TES games, Portal, Hitman series and many more!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="display: flex; justify-content: center; align-items: center; gap: 1rem; text-align: center;" >
+                        <div class="lego-icon"><img src="./img/Zrzut ekranu 2024-04-15 192557.png" alt=""></div>
+                        <h3>Geography</h3>
+                        <div class="lego-icon"><img src="./img/Zrzut ekranu 2024-04-15 192557.png" alt=""></div>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        I mainly like the political geography - locations and names of many different countries. Over time that interest spilled over to history of countries and their other aspects. I'm also interested in vexillology - the science about flags. I'm currently trying to memorize all of the capitals.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
     </main>
-    <footer>Designed and coded by Łukasz Lubaszewski &copy;</footer>
+    <footer>&copy; 2024 Łukasz Lubaszewski</footer>
 </body>
 </html>
