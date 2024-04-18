@@ -565,3 +565,8 @@ footer{
         gap: 7rem
     }
 }
+
+.picture-links i{
+    position: relative;
+    top: -8px;
+}
