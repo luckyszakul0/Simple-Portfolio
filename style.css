@@ -511,3 +511,57 @@ footer{
         padding: 2rem;
     }
 }
+
+@media only screen and (max-width: 950px) {
+    .name{
+        font-size: 4rem;
+    }
+
+    .pl-flag{
+        display: none;
+    }
+
+    .fill-meter{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .picture-links{
+        position: relative;
+        top: -2rem;
+    }
+
+    .container{
+        max-width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    body{
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .face-picture{
+        display: none;
+    }
+
+    .name{
+        font-size: 4rem;
+    }
+
+    .picture-links{
+        width: 50%;
+    }
+
+    .thing{
+        width: 50%;
+    }
+
+    .basic-info{
+        gap: 7rem
+    }
+}
