@@ -25,13 +25,23 @@ body{
     padding: 5rem 0;
 }
 
+@keyframes shadow {
+    from{
+        box-shadow: none;
+    }
+    to{
+        box-shadow: 0 0 100px 200px var(--baby-blue);
+    }
+}
+
 .container{
     background: var(--white);
     max-width: 70%;
     border-radius: 5rem;
     border: 1px solid var(--navy-blue);
     padding: 5rem 4rem;
-    box-shadow: 0 0 800px 150px var(--baby-blue);
+    /* box-shadow: 0 0 100px 200px var(--baby-blue); */
+    animation: shadow 10s linear infinite alternate;
 }
 
 .basic-info{
